@@ -8,7 +8,7 @@
 
 <head>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-	<script src="./script/script1.js"></script>
+	<script src="./script/validar.js"></script>
 	<meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title></title>
@@ -23,22 +23,15 @@
 </head>
 <body>
 		<div class="container">
-		<?php
-		include("include/class.figura.php");
-		include("include/Interface.formulas.php");
-		//include("figuras/class.cuadrado.php");
-		//include("figuras/class.rectangulo.php");
-		//include("figuras/class.triangulo.php");
-			
-		//$objCuadrado = new cuadrado();
-		//$objRectangulo = new rectangulo();
-		//$objTriangulo = new triangulo();
-			
-		echo figura::get_form();
-		
-		
-	?>
-	<script src="./script/validar.js"></script>
+			<?php
+				include_once("include/class.figura.php");
+				include_once("include/Interface.formulas.php");
+				include_once("figuras/class.cuadrado.php");
+				include_once("figuras/class.rectangulo.php");
+				include_once("figuras/class.triangulo.php");
+				echo figura::get_form();
+				
+			?>
         </div>
 		
 	
